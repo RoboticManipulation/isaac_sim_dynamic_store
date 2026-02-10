@@ -14,6 +14,11 @@ Usage:
 - Run this script in IsaacSim
 - It will load the empty shop and populate it with products programmatically
 """
+# Creating a new isaac instance
+# import os
+# os.environ["OMNI_KIT_ACCEPT_EULA"] = "YES"
+# from isaacsim import SimulationApp
+# simulation_app = SimulationApp({"headless": False})
 
 import omni.usd
 from pxr import Usd, UsdGeom, Gf, UsdPhysics, PhysxSchema
@@ -24,7 +29,7 @@ import math
 import json
 from pathlib import Path
 
-BASE_PATH = "C:/Users/sascha/Code/Hackathon/Code/Dynamic_Shop/"
+BASE_PATH = "/workspace/isaac_sim_dynamic_store/"
 
 # Configuration
 ENABLE_PHYSICS_FOR_ALL = True  # Set to False to make all products static (no physics)

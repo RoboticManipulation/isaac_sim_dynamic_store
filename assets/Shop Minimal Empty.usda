@@ -126,7 +126,7 @@ def Xform "World" (
         token visibility = "inherited"
         float3 xformOp:rotateXYZ = (0, 0, 0)
         float3 xformOp:scale = (0.75, 0.75, 0.75)
-        double3 xformOp:translate = (19, -39, 0)
+        double3 xformOp:translate = (19.0, -34.45, 0)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
         over "mac_and_cheese" (
