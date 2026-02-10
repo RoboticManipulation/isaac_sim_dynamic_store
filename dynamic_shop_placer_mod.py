@@ -219,20 +219,20 @@ class DynamicShopPlacer:
     # ------------------------------------------------------------------
     def randomize_product_rotations(self, product_data_dict, num_products=3):
         randomized_data = product_data_dict.copy()
-        product_ids = list(randomized_data.keys())
-        selected_products = random.sample(product_ids, min(num_products, len(product_ids)))
+        # product_ids = list(randomized_data.keys())
+        # selected_products = random.sample(product_ids, min(num_products, len(product_ids)))
 
-        for pid in selected_products:
-            pd = randomized_data[pid].copy()
-            random_rotation = [
-                random.uniform(-180, 180),
-                random.uniform(-180, 180),
-                random.uniform(-180, 180),
-            ]
-            pd["rotate"] = random_rotation
-            pd.pop("orient", None)
-            randomized_data[pid] = pd
-            print(f"Randomized rotation for {pid}: {random_rotation}")
+        # for pid in selected_products:
+        #     pd = randomized_data[pid].copy()
+        #     random_rotation = [
+        #         random.uniform(-180, 180),
+        #         random.uniform(-180, 180),
+        #         random.uniform(-180, 180),
+        #     ]
+        #     pd["rotate"] = random_rotation
+        #     pd.pop("orient", None)
+        #     randomized_data[pid] = pd
+        #     print(f"Randomized rotation for {pid}: {random_rotation}")
 
         return randomized_data
 
